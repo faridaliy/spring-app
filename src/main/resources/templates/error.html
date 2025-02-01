@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Error</title>
+</head>
+<body>
+<h1>Error Page</h1>
+<p th:if="${errorMessage}" th:text="${errorMessage}"></p>
+<p th:unless="${errorMessage}">Unknown error</p>
+<a th:href="@{/tasks}">Return to Tasks</a>
+</body>
+</html>
